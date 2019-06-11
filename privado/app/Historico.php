@@ -3,11 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Historico extends Model
 {
     use SoftDeletes;
-    
+
     protected $table='historico';
 
     protected $fillable =  array('idbien',
