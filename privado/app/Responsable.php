@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Responsable extends Model
 {
+    use SoftDeletes;
+    
     protected $table = 'responsable';
 
     protected $fillable =  array('nombre');

@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Bien extends Model
 {
+    use SoftDeletes;
+    
     // Nombre de la tabla de la base de datos que definimos (Database table name).
     protected $table='bien';
 

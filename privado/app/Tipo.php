@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tipo extends Model
 {
+    use SoftDeletes;
+    
     protected $table = 'tipo';
 
     protected $fillable =  array('nombre');

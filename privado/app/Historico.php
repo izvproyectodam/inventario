@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Historico extends Model
 {
+    use SoftDeletes;
+    
     protected $table='historico';
 
     protected $fillable =  array('idbien',
